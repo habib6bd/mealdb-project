@@ -33,13 +33,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
       meals.forEach((meal) => {
         const card = document.createElement("div");
-        card.className = "col-md-3";
+        card.classList.add("col-md-4", "col-lg-4");
 
         card.innerHTML = `
           <div class="card shadow h-100" data-id="${meal.idMeal}">
             <img src="${meal.strMealThumb}" class="card-img-top" alt="${meal.strMeal}">
             <div class="card-body">
-              <h5 class="card-title">${meal.strMeal}</h5>
+              <h5 class="card-title text-center text-primary">${meal.strMeal}</h5>
             </div>
           </div>
         `;
